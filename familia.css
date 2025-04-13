@@ -33,7 +33,12 @@ body {
      height: 100px; /* Ajuste conforme necessário */
   padding: 10px; /* Reduza o padding */
   font-size: 16px; /* Reduza o tamanho da fonte */
-} 
+} header img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do header */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove qualquer espaço em branco ao redor */
+  margin: 0 auto; /* Centraliza horizontalmente a imagem */
+}
 
 @media (max-width: 768px) {
     .header {
