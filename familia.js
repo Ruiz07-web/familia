@@ -52,3 +52,12 @@ document.querySelectorAll('.photo-card').forEach(card => {
         card.style.transform = 'scale(1) rotate(0deg)';
     });
 });
+function playMusic() {
+    const audio = document.getElementById("bgMusic");
+    
+    // Tenta tocar o áudio e captura erros
+    audio.play().catch(error => {
+        alert("Clique em 'OK' para ativar o som! 🎧");
+        audio.play(); // Segunda tentativa após interação
+    });
+}
