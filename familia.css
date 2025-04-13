@@ -21,15 +21,34 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
-    width: 80%;
-    height: 200px; /* Ajuste a altura conforme necessário */
+    width: 100%; /* Faz o header ocupar toda a largura da tela */
+    max-width: 1200px; /* Limita a largura máxima */
+    height: auto; /* Remove a altura fixa */
+    aspect-ratio: 16 / 9; /* Mantém uma proporção para o header */
     display: flex;
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
     color: rgba(255, 255, 255, 0.9); /* Torna o texto branco com leve transparência */
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Adiciona uma sombra escura ao texto */
-}
+} @media (max-width: 768px) {
+    .header {
+        padding: 10px;
+        border-radius: 5px;
+    }
 
+    .gallery {
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .photo-card {
+        width: 150px; /* Reduz o tamanho das fotos */
+    }
+
+    .btn {
+        font-size: 14px; /* Diminui o tamanho dos botões */
+        padding: 8px 15px;
+    }
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
