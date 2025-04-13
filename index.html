@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adicionei essa linha -->
     <title>Família Ruiz</title>
     <link rel="shortcut icon" href="favi.jpg" type="image/x-icon">
     <link rel="stylesheet" href="familia.css">
@@ -15,10 +15,12 @@
         <h1>Família Ruiz</h1>
         <p>Onde o amor nunca acaba e a aventura nunca para!</p>
     </header>
+
     <div class="intro">
         <h2>Bem-vindo à nossa família!</h2>
+    </div> <!-- Corrigi o fechamento -->
+
     <div class="gallery" id="gallery">
-        <!-- Adicione suas fotos aqui -->
         <div class="photo-card">
             <img src="foto1.jpeg" alt="Membro da família">
             <div class="photo-info">
@@ -54,11 +56,10 @@
         <button class="btn" onclick="changeTheme()">🎨 Mudar Tema</button>
         <button class="btn" onclick="startFireworks()">🎇 Fogos de Artifício</button>
     </div>
-    <audio autoplay loop>
-        <source src="audio.mp4" type="audio/mpeg">
-        Seu navegador não suporta áudio.
-      </audio>
-      
-</body>
 
+    <audio autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg"> <!-- Mudei para .mp3 -->
+        Seu navegador não suporta áudio.
+    </audio>
+</body>
 </html>
